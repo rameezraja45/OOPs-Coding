@@ -1,0 +1,56 @@
+#include<iostream.h>
+#include<conio.h>
+class book
+{
+char title[20];
+int price;
+int pages;
+int selling;
+public:
+void read_b()
+{
+cout<<"Enter Book Title:";
+cin>>title;
+cout<<"Enter Book Price:";
+cin>>price;
+cout<<"Enter Book's pages:";
+cin>>pages;
+cout<<"Enter Book's last 3 month Selling:";
+cin>>selling;
+}
+void show_b()
+{
+cout<<"\n Book Title: \n"<<title;
+cout<<"\n Book Price: \n"<<price;
+cout<<"\n Book's Pages: \n"<<pages;
+cout<<"\n book's Last 3 MOnth Selling: \n"<<selling;
+}
+class tape:public book
+{
+char name[30];
+int duration;
+public:
+void read_t()
+{
+read_b();
+cout<<"Enter Tape Title:";
+cin>>name;
+cout<<"Enter Tape Time Duration(IN Mintutes):";
+cin>>duration;
+}
+void show_t()
+{
+show_b();
+cout<<"\n Tape Title:"<<name;
+cout<<"\n Tape Time Duration(In Minutes):"<<duration;
+}
+};
+void main()
+{
+clrscr();
+tape t1;
+t1.read_t();
+t2.show_t();
+getch();
+}
+

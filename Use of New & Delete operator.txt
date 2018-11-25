@@ -1,0 +1,49 @@
+#include<iostream.h>
+#include<conio.h>
+class array
+{
+public:
+int *p,size;
+void setsize(int);
+void read();
+void show();
+void display();
+};
+void array::setsize(int s)
+{
+size=s;
+p=new int[size]
+}
+void array::read()
+{
+cout<<"Enter Elements";
+for(int i=0;i<size;i++)
+{
+cin>>p[i];
+}}
+void array::show()
+{
+cout<<"Elements are";
+fofr(int i=0;i<size;i++)
+{
+cout<<p[i];
+}
+}
+void array::destroy()
+{
+delete p;
+}
+void main()
+{
+array a1;
+clrscr();
+int count;
+cout<<Enter the Size:";
+cin>>count;
+a1.setsize(count);
+a1.read();
+a1.show();
+a1.destroy();
+getch();
+}
+

@@ -1,0 +1,76 @@
+#include<iostream.h>
+#include<conio.h>
+class A
+{
+private:
+int a;
+public:
+void read_a()
+{
+cout<<"Enter the Value of a:";
+cin>>a;
+}
+void show_a()
+{
+cout<<"\n a :\n"<<a;
+}
+};
+class B
+{
+private:
+int b;
+public:
+void read_b()
+{
+cout<<"Enter the Value of b:";
+cin>>b;
+}
+void show_b()
+{
+cout<<"\n b:\n"<<b;
+}
+};
+class C
+{
+private:
+int c;
+public:
+void read_c()
+{
+cout<<"Enter the Value of c:";
+cin>>c;
+}
+void show_c()
+{
+cout<<"\n c:\n"<<c;
+}
+};
+class D:public A,public B,public C
+{
+int d;
+public:
+voiod read()
+{
+read_a();
+read_b();
+read_c();
+cout<<"Enter the VAlue of d:";
+cin>>d;
+}
+void show(0
+{
+show_a();
+show_b();
+show_c();
+cout<<"\n d:\n"<<d;
+}
+};
+void main()
+{
+clrscr();
+D d1;
+d1.read();
+d1.show();
+getch();
+}
+

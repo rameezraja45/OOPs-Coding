@@ -1,0 +1,48 @@
+#include<iostream.h>
+#include<conio.h>
+class std
+{
+char name[20];
+int roll_no;
+public:
+void read()
+{
+cout<<"Enter Name:";
+cin>>name;
+cout<<"Enter Roll No.:";
+cin>>roll_no;
+}
+void show()
+{
+cout<<"\n Name:\n"<<name;
+cout<<"\n Roll No.:\n"<<roll_no;
+}
+};
+class exam:public std
+{
+char branch[20];
+int marks;
+public:
+void read_exam()
+{
+read();
+cout<<"Enter Branch:";
+cin>>branch;
+cout<<"Enter Marks:";
+cin>>marks;
+}
+void show_exam()
+{
+show();
+cout<<"\n Branch:\n"<<branch;
+cout<<"\n Marks:\n"<<marks;
+}
+};
+void main()
+{
+exam e1;
+e1.read_exam();
+e1.show_exam();
+getch();
+}
+ 

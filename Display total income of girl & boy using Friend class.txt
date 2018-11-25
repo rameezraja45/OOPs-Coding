@@ -1,0 +1,43 @@
+#include<iostream.h>
+#include<conio.h>
+class Boy
+{
+int income1;
+int income2;
+public:
+void setdata(int i1,int i2)
+{
+income1=i1;
+income2=i2;
+}
+friend class girl;
+};
+class girl
+{
+int income;
+public:
+int girlfunction(Boy b1)
+{
+return b1.income1+b1.income2;
+}
+void setdata(int i)
+{
+income=i;
+}
+void show()
+{
+Boy b1;
+b1.setdata(2000,5000);
+cout<<"Boy's income in show()"<<b1.income1;
+cout<<"Girl's income in show()"<<income;
+}
+};
+void main()
+{
+Boy b1;
+girl g1;
+b1.setdata(5000,10000);
+g1.setdata(3000);
+cout<<"b1 total income:"<<g1.girlfunction();
+g1.show();
+}

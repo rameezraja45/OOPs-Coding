@@ -1,0 +1,70 @@
+#include<iostream.h>
+
+#include<conio.h>
+
+class distance
+
+{
+
+int x,y,sum;
+
+public:
+
+void read1()
+
+{
+
+cout<<"enter Distance1 :";
+
+cin>>x;
+
+}
+
+void read2()
+
+{
+
+cout<<"Enter Distance2 :";
+
+cin>>y;
+
+}
+
+void show()
+
+{
+cout<<"Sum is "<<sum;
+
+}
+
+void add(distance d1,distance d2)
+
+{
+
+sum=d1.x+d2.y;
+
+}
+};
+
+void main()
+
+
+clrscr();
+
+distance d1,d2,d3;
+
+cout<<"d1=";
+
+d.read1();
+
+cout<<"d2=";
+
+d2.read2();
+
+d3.add(d1,d2);
+
+d3.show();
+
+getch();
+
+}

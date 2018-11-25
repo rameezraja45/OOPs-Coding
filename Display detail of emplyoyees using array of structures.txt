@@ -1,0 +1,35 @@
+#include<stdio.h>
+#include<conio.h>
+struct emp
+{
+int id;
+char name[20];
+int no;
+};
+void display(struct emp e)
+void main()
+{
+int i,n;
+clrscr();
+struct emp e;
+printf("\n Enter no. of Employees:\n");
+scanf("%d",&n);
+for(i=0;i<n;i++)
+{
+printf("Enter id:");
+scanf("%d",&e.id);
+printf("Enter Name\n:");
+scanf("%d",&e.name);
+printf("Enter no\n:");
+scanf("%d",&e.no);
+display(e);
+getch();
+}
+}
+void display(struct emp e)
+{
+int i,n;
+printf("\n\nid \t name\t\n no\n");
+scanf("%d\t\n%s\t\t%d\n\n",e.id,e.name,e.no);
+}
+

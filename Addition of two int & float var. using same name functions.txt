@@ -1,0 +1,48 @@
+#include<iostream.h>
+
+#include<conio.h>
+
+int sum(int a,int b)
+
+{
+
+return (a+b);
+
+}
+
+float sum(float a,float b)
+
+{
+
+return (a+b);
+
+}
+
+void main()
+
+{
+
+int a,b,sum_int;
+
+float c,d,sum_float;
+
+cout<<"Enter 2 int type element:\n";
+
+cin>>a>>b;
+
+cout<<"Enter 2 float type element:\n";
+
+cin>>c>>d;
+
+sum_int=sum(a,b);
+
+sum_float=sum(c,d);
+
+cout<<"Sum of"<<a<<"and"<<b<<"is:"<<sum_int;
+
+cout<<"Sum of"<<c<<"and"<<d<<"is:"<<sum_float;
+
+getch();
+
+}
+

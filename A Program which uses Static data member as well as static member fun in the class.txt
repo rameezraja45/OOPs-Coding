@@ -1,0 +1,56 @@
+#include(iostream.h>
+
+#include<conio.h>
+
+class counter
+
+{
+
+static int count;
+
+public:
+
+void countobject()
+
+{
+
+count++;
+
+}
+
+static void getcount()
+
+{
+
+cout<<"\n Object Created \n"<<count;
+
+cin>>count;
+
+}
+
+};
+
+int counter::count=0;
+
+int main()
+
+{
+
+clrscr();
+
+counter c1;
+
+c1.countobject();
+
+counter::getcount();
+
+counter c2;
+
+counter::getcount();
+
+getch();
+
+return 0;
+
+}
+ 
